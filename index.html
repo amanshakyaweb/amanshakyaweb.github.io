@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aman Web Developer</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
+
+
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scroll-bar"></div>
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+
+<!-- Loader -->
+<div id="loader">
+  <div id="loader-text">Aman <em style="font-style:italic;opacity:0.5"> Shakya </em></div>
+  <div id="loader-progress">Loading</div>
+  <div id="loader-bar"></div>
+</div>
+<section class="hanger-section" id="hangerHero">
+
+  <!-- NAV (inside section, not fixed to body) -->
+  <nav class="h-nav">
+    <a href="#" class="h-nav-logo"><span>DR</span>APE</a>
+    <ul class="h-nav-links">
+      <li><a href="assets/page/work.html">Work </a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="h-nav-btn">Get a Quote</a>
+  </nav>
+
+  <!-- SCENE: rope + rail (decorative, non-interactive) -->
+  <div class="h-scene">
+    <div class="h-rope"></div>
+    <div class="h-rail"><div class="h-rail-shine"></div></div>
+  </div>
+
+  <!-- DRAGGABLE CARDS -->
+  <div class="h-viewport" id="hViewport">
+    <div class="h-track" id="hTrack"></div>
+  </div>
+
+  <!-- HERO TEXT -->
+  <div class="h-hero-text">
+    <div class="h-label">Creative Studio — Est. 2024</div>
+    <h1 class="h-title">
+      We Design <br> <em>Websites</em> <br> That Fit.
+    </h1>
+    <p class="h-sub">Drag to browse our work. Each site crafted with precision — like a tailored piece.</p>
+  </div>
+
+  <!-- DRAG HINT -->
+  <div class="h-hint">
+    <div class="h-hint-icon">
+      <svg viewBox="0 0 24 24"><path d="M8 12h8M12 8l4 4-4 4"/></svg>
+    </div>
+    Drag left or right
+  </div>
+
+  <!-- PROJECT COUNT -->
+  <div class="h-count">
+    <div class="h-count-num" id="cntNum">18</div>
+    <div class="h-count-lbl">Projects</div>
+  </div>
+
+  <!-- DRAG ACTIVE LABEL -->
+  <div class="h-drag-label" id="dragLabel">Dragging...</div>
+
+</section>
+<!-- Marquee -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marquee">
+    <div class="marquee-item">React <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Next.js <span class="marquee-dot"></span></div>
+    <div class="marquee-item">GSAP Animations <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Web Performance <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Node.js <span class="marquee-dot"></span></div>
+    <div class="marquee-item">TypeScript <span class="marquee-dot"></span></div>
+    <div class="marquee-item">UI Engineering <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Framer Motion <span class="marquee-dot"></span></div>
+    <div class="marquee-item">React <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Next.js <span class="marquee-dot"></span></div>
+    <div class="marquee-item">GSAP Animations <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Web Performance <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Node.js <span class="marquee-dot"></span></div>
+    <div class="marquee-item">TypeScript <span class="marquee-dot"></span></div>
+    <div class="marquee-item">UI Engineering <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Framer Motion <span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <div class="about-left">
+    <div class="about-label">About me</div>
+    <h2 >I turn ideas into<br><em>living</em> websites<br>that perform.</h2>
+  </div>
+  <div class="about-right">
+    <p>
+      "I'm a <strong>Frontend Developer</strong> currently pursuing my final semester of BSc. My focus is on mastering the art of building fast, responsive, and pixel-perfect UIs."
+    </p>
+    <p>
+      From <strong>pixel-perfect UIs</strong> to back-end architectures, I enjoy the full stack — but my heart is in the front-end, where animation meets performance.
+    </p>
+    <div class="about-stats">
+      <div>
+        <div class="stat-num" data-count="30">0</div>
+        <div class="stat-label">Projects done</div>
+      </div>
+      <div>
+        <div class="stat-num" data-count="5">0</div>
+        <div class="stat-label">Years experience</div>
+      </div>
+      <div>
+        <div class="stat-num" data-count="18">0</div>
+        <div class="stat-label">Happy clients</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Work -->
+<section id="work">
+  <div class="section-header">
+    <h2>Selected Work</h2>
+    <span class="count">(04 Projects)</span>
+  </div>
+
+  <div class="projects-list">
+    <a class="project-item" href="#" data-preview="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=640&q=80">
+      <span class="proj-num">01</span>
+      <div class="proj-info">
+        <div class="proj-title">E-Commerce Platform</div>
+        <div class="proj-tags"><span>React</span><span>·</span><span>Node.js</span><span>·</span><span>Stripe</span></div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+
+    <a class="project-item" href="#" data-preview="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&q=80">
+      <span class="proj-num">02</span>
+      <div class="proj-info">
+        <div class="proj-title">Analytics Dashboard</div>
+        <div class="proj-tags"><span>Next.js</span><span>·</span><span>D3.js</span><span>·</span><span>PostgreSQL</span></div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+
+    <a class="project-item" href="#" data-preview="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=640&q=80">
+      <span class="proj-num">03</span>
+      <div class="proj-info">
+        <div class="proj-title">Brand Website</div>
+        <div class="proj-tags"><span>GSAP</span><span>·</span><span>Three.js</span><span>·</span><span>WebGL</span></div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+
+    <a class="project-item" href="#" data-preview="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=640&q=80">
+      <span class="proj-num">04</span>
+      <div class="proj-info">
+        <div class="proj-title">Mobile Application</div>
+        <div class="proj-tags"><span>React Native</span><span>·</span><span>Firebase</span><span>·</span><span>TypeScript</span></div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+  </div>
+</section>
+
+<!-- Image Preview (follows cursor) -->
+<div class="preview-img" id="previewImg">
+  <img src="" alt="" id="previewImgEl">
+</div>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="section-header" style="border-color:rgba(245,243,238,0.12)">
+    <h2 style="color:var(--cream)">What I do</h2>
+    <span class="count" style="color:rgba(245,243,238,0.4)">(06 Skills)</span>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">Frontend Dev</div>
+      <div class="skill-desc">Building fast, accessible, and responsive user interfaces with modern frameworks.</div>
+      <div class="skill-tools"><span class="skill-tool">React</span><span class="skill-tool">Next.js</span><span class="skill-tool">Vue</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">✦</div>
+      <div class="skill-name">Animations</div>
+      <div class="skill-desc">Bringing interfaces to life with smooth, performant scroll-triggered animations.</div>
+      <div class="skill-tools"><span class="skill-tool">GSAP</span><span class="skill-tool">Framer Motion</span><span class="skill-tool">CSS</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">◈</div>
+      <div class="skill-name">Backend Dev</div>
+      <div class="skill-desc">Scalable APIs and server-side architecture for production-grade applications.</div>
+      <div class="skill-tools"><span class="skill-tool">Node.js</span><span class="skill-tool">Express</span><span class="skill-tool">PostgreSQL</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">◻</div>
+      <div class="skill-name">UI Engineering</div>
+      <div class="skill-desc">Translating design system tokens into pixel-perfect, reusable component libraries.</div>
+      <div class="skill-tools"><span class="skill-tool">Figma</span><span class="skill-tool">Storybook</span><span class="skill-tool">Tailwind</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">▲</div>
+      <div class="skill-name">Performance</div>
+      <div class="skill-desc">Optimizing Core Web Vitals, bundle size, and runtime performance for real users.</div>
+      <div class="skill-tools"><span class="skill-tool">Lighthouse</span><span class="skill-tool">Webpack</span><span class="skill-tool">CDN</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">◯</div>
+      <div class="skill-name">3D & WebGL</div>
+      <div class="skill-desc">Creating immersive 3D web experiences with Three.js and shader programming.</div>
+      <div class="skill-tools"><span class="skill-tool">Three.js</span><span class="skill-tool">GLSL</span><span class="skill-tool">R3F</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="contact-label">Get in touch</div>
+  <h2 id="interactive-text"><span>L <em></em> e <em></em> t <em></em> 's</span> <span> _ <em></em> b <em></em> u <em></em> i <em></em> l <em></em> d </span> <span> _ <em></em> s <em></em> o <em></em> m <em></em> e <em></em> t <em></em> h <em></em> i <em></em> n <em></em> g </span> <span class="gaap"><em></em> _ <em></em> g <em></em> r <em></em> e <em></em> a <em></em> t <em></em></span><span></em></em><br> _ <em></em> t <em></em> o <em></em> g <em></em> e <em></em> t <em></em> h <em></em> e <em></em> r. </span></h2>
+  <a href="mailto:amanshakya2716@gmail.com" class="contact-email">
+    <span>amanshakya@gmail.com</span>
+    <span>→</span>
+  </a>
+  <div class="contact-socials">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Twitter</a>
+    <a href="#">Dribbble</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <span>© 2025 Your Name</span>
+  <span>Web Developer — India</span>
+  <span>Designed & Coded with ♥</span>
+</footer>
+
+
+
+<!-- GSAP ScrollTo plugin for smooth nav -->
+ <script src="assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script>gsap.registerPlugin(ScrollToPlugin);</script>
+
+</body>
+</html>
