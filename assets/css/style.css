@@ -166,7 +166,7 @@
 }
 .h-title{
   font-family:'Syne',sans-serif;
-  font-size:clamp(4.5rem,6vw, 7rem);
+  font-size:clamp(3.5rem,6vw, 7rem);
   font-weight:800;color:#1a1a1a;line-height:.96;letter-spacing:-2px;
 }
 .h-title em{
@@ -352,13 +352,6 @@
 .h-tag-txt{font-size:9px;color:#aaa;margin-left:4px}
 
 
-@media(max-width:768px){
-  .h-nav{padding:0 20px}
-  .h-nav-links{display:none}
-  .h-hero-text{left:30px;bottom:42px}
-    .h-hint {right: 20px;bottom: 445px;}
-  .h-count{display:none}
-}
 
 
   /* ─── MARQUEE ─── */
@@ -785,6 +778,14 @@
     width: 0%;
     transition: width 0.1s linear;
   }
+  @media(max-width:768px){
+  .h-nav{padding:0 20px}
+  .h-nav-links{display:none}
+  .h-hero-text{left:30px;bottom:42px}
+    .h-hint {right:132px;bottom: 325px;}
+  .h-count{display:none}
+}
+
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 768px) {
@@ -797,8 +798,9 @@
     .skills-grid { grid-template-columns: 1fr; }
     .skill-card:nth-child(3n) { border-right: none; }
     .skill-card { border-bottom: 1px solid rgba(245,243,238,0.12); }
-    #contact { padding: 100px 24px 80px; }
+    #contact { padding: 50px 24px 80px; }
     footer { padding: 20px 24px; flex-direction: column; gap: 8px; }
+    .contact-email{padding: 20px 25px;}
     .about-stats { grid-template-columns: repeat(3,1fr); gap: 16px; }
     #contact h2{letter-spacing: -3px;}
     #skills {padding: 60px 17px;}
