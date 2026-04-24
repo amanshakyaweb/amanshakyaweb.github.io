@@ -91,24 +91,24 @@ function startIntro() {
 
 
 const SITES=[
-  {name:"Aura Studio",    cat:"Branding",    tag:"Live",     bg:"linear-gradient(135deg,#7C3AED,#C084FC)", emoji:"✦", dot:"#a855f7", tagBg:"#f3e8ff", tagC:"#7c3aed", price:"Brand Kit"},
-  {name:"Haze Coffee",    cat:"E-Commerce",  tag:"Active",   bg:"linear-gradient(135deg,#D97706,#FCD34D)", emoji:"◉", dot:"#f59e0b", tagBg:"#fef9ee", tagC:"#b45309", price:"Shopify"},
-  {name:"Forma Arch",     cat:"Portfolio",   tag:"Live",     bg:"linear-gradient(135deg,#059669,#6EE7B7)", emoji:"⬡", dot:"#10b981", tagBg:"#ecfdf5", tagC:"#065f46", price:"Portfolio"},
-  {name:"Nox Agency",     cat:"Agency",      tag:"Featured", bg:"linear-gradient(135deg,#0f0f23,#3730a3)", emoji:"✧", dot:"#6366f1", tagBg:"#eef2ff", tagC:"#4338ca", price:"Agency"},
-  {name:"Bloom Skin",     cat:"Beauty",      tag:"New",      bg:"linear-gradient(135deg,#BE185D,#F9A8D4)", emoji:"✿", dot:"#ec4899", tagBg:"#fdf2f8", tagC:"#9d174d", price:"Store"},
-  {name:"Orbit Tech",     cat:"SaaS",        tag:"Beta",     bg:"linear-gradient(135deg,#0369A1,#38BDF8)", emoji:"◎", dot:"#0ea5e9", tagBg:"#f0f9ff", tagC:"#075985", price:"SaaS"},
-  {name:"Root Foods",     cat:"Restaurant",  tag:"Live",     bg:"linear-gradient(135deg,#CA8A04,#FDE047)", emoji:"◈", dot:"#eab308", tagBg:"#fefce8", tagC:"#854d0e", price:"Menu"},
-  {name:"Vault Films",    cat:"Film",        tag:"Live",     bg:"linear-gradient(135deg,#1c1917,#44403c)", emoji:"▶", dot:"#f97316", tagBg:"#fff7ed", tagC:"#c2410c", price:"Reel"},
-  {name:"Mira Yoga",      cat:"Wellness",    tag:"Active",   bg:"linear-gradient(135deg,#065F46,#34D399)", emoji:"❋", dot:"#34d399", tagBg:"#f0fdf4", tagC:"#14532d", price:"Class"},
-  {name:"Pulse Music",    cat:"Music",       tag:"Live",     bg:"linear-gradient(135deg,#2d1b69,#7c3aed)", emoji:"♫", dot:"#a78bfa", tagBg:"#f5f3ff", tagC:"#5b21b6", price:"Label"},
-  {name:"Peak Sports",    cat:"Sports",      tag:"Featured", bg:"linear-gradient(135deg,#BE123C,#FB7185)", emoji:"△", dot:"#f43f5e", tagBg:"#fff1f2", tagC:"#9f1239", price:"Store"},
-  {name:"Slate Legal",    cat:"Law Firm",    tag:"Live",     bg:"linear-gradient(135deg,#334155,#94A3B8)", emoji:"▪", dot:"#64748b", tagBg:"#f8fafc", tagC:"#334155", price:"Firm"},
-  {name:"Cleo Jewels",    cat:"Luxury",      tag:"New",      bg:"linear-gradient(135deg,#B45309,#FCD34D)", emoji:"◆", dot:"#f59e0b", tagBg:"#fffbeb", tagC:"#92400e", price:"Luxury"},
-  {name:"Zest Travel",    cat:"Travel",      tag:"Active",   bg:"linear-gradient(135deg,#1D4ED8,#60A5FA)", emoji:"✈", dot:"#3b82f6", tagBg:"#eff6ff", tagC:"#1e40af", price:"Agency"},
-  {name:"Dusk Interiors", cat:"Interior",    tag:"Live",     bg:"linear-gradient(135deg,#7E22CE,#E879F9)", emoji:"⬟", dot:"#d946ef", tagBg:"#fdf4ff", tagC:"#6b21a8", price:"Design"},
-  {name:"Core Fitness",   cat:"Fitness",     tag:"Beta",     bg:"linear-gradient(135deg,#C2410C,#FB923C)", emoji:"◬", dot:"#f97316", tagBg:"#fff7ed", tagC:"#9a3412", price:"App"},
-  {name:"Mint Finance",   cat:"FinTech",     tag:"Live",     bg:"linear-gradient(135deg,#15803D,#4ADE80)", emoji:"$", dot:"#22c55e", tagBg:"#f0fdf4", tagC:"#14532d", price:"SaaS"},
-  {name:"Dust Gallery",   cat:"Art",         tag:"Featured", bg:"linear-gradient(135deg,#1a1410,#3d2e1e)", emoji:"◐", dot:"#c8a96e", tagBg:"#fef9ee", tagC:"#92400e", price:"Gallery"},
+  {name:"Aura Studio",    cat:"Branding",    tag:"Live",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#a855f7", tagBg:"#f3e8ff", tagC:"#7c3aed", price:"Brand Kit"},
+  {name:"Haze Coffee",    cat:"E-Commerce",  tag:"Active",   img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#f59e0b", tagBg:"#fef9ee", tagC:"#b45309", price:"Shopify"},
+  {name:"Forma Arch",     cat:"Portfolio",   tag:"Live",     img:"https://images.unsplash.com/photo-1510773549543-a586f822548b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", dot:"#10b981", tagBg:"#ecfdf5", tagC:"#065f46", price:"Portfolio"},
+  {name:"Nox Agency",     cat:"Agency",      tag:"Featured", img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#6366f1", tagBg:"#eef2ff", tagC:"#4338ca", price:"Agency"},
+  {name:"Bloom Skin",     cat:"Beauty",      tag:"New",      img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#ec4899", tagBg:"#fdf2f8", tagC:"#9d174d", price:"Store"},
+  {name:"Orbit Tech",     cat:"SaaS",        tag:"Beta",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#0ea5e9", tagBg:"#f0f9ff", tagC:"#075985", price:"SaaS"},
+  {name:"Root Foods",     cat:"Restaurant",  tag:"Live",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#eab308", tagBg:"#fefce8", tagC:"#854d0e", price:"Menu"},
+  {name:"Vault Films",    cat:"Film",        tag:"Live",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#f97316", tagBg:"#fff7ed", tagC:"#c2410c", price:"Reel"},
+  {name:"Mira Yoga",      cat:"Wellness",    tag:"Active",   img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#34d399", tagBg:"#f0fdf4", tagC:"#14532d", price:"Class"},
+  {name:"Pulse Music",    cat:"Music",       tag:"Live",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#a78bfa", tagBg:"#f5f3ff", tagC:"#5b21b6", price:"Label"},
+  {name:"Peak Sports",    cat:"Sports",      tag:"Featured", img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#f43f5e", tagBg:"#fff1f2", tagC:"#9f1239", price:"Store"},
+  {name:"Slate Legal",    cat:"Law Firm",    tag:"Live",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#64748b", tagBg:"#f8fafc", tagC:"#334155", price:"Firm"},
+  {name:"Cleo Jewels",    cat:"Luxury",      tag:"New",      img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#f59e0b", tagBg:"#fffbeb", tagC:"#92400e", price:"Luxury"},
+  {name:"Zest Travel",    cat:"Travel",      tag:"Active",   img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#3b82f6", tagBg:"#eff6ff", tagC:"#1e40af", price:"Agency"},
+  {name:"Dusk Interiors", cat:"Interior",    tag:"Live",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#d946ef", tagBg:"#fdf4ff", tagC:"#6b21a8", price:"Design"},
+  {name:"Core Fitness",   cat:"Fitness",     tag:"Beta",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#f97316", tagBg:"#fff7ed", tagC:"#9a3412", price:"App"},
+  {name:"Mint Finance",   cat:"FinTech",     tag:"Live",     img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#22c55e", tagBg:"#f0fdf4", tagC:"#14532d", price:"SaaS"},
+  {name:"Dust Gallery",   cat:"Art",         tag:"Featured", img:"https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp", dot:"#c8a96e", tagBg:"#fef9ee", tagC:"#92400e", price:"Gallery"},
 ];
 const SWAYS  = ['sw1','sw2','sw3','sw4','sw5'];
 const STRH   = [55,75,45,65,85,50,70,60,80,55,75,65,45,85,70,60,55,75];
@@ -146,8 +146,8 @@ function buildCard(s, i){
           <div class="h-ptag-str"></div>
           <div class="h-ptag-body">${s.price}</div>
         </div>
-        <div class="h-preview" style="background:${s.bg}">
-          <span style="font-size:38px;position:relative;z-index:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,.2))">${s.emoji}</span>
+        <div class="h-preview">
+        <img src="${s.img}" alt="">
         </div>
         <div class="h-body">
           <div class="h-cat">${s.cat}</div>
