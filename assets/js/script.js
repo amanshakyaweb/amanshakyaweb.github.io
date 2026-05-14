@@ -1,4 +1,39 @@
+const icon = document.querySelector('.menu-icon');
+const list = document.querySelector('.menu');
+const player = document.querySelector('dotlottie-player');
+// Saari menu buttons ko select karein (maan lijiye unki class .nav-link hai)
+const navLinks = document.querySelectorAll('.menu a'); 
 
+let isOpen = false;
+
+// Menu toggle karne ka function (taki ise baar-baar na likhna pade)
+function toggleMenu() {
+  if(!isOpen){
+    list.classList.add('show-menu');
+    document.body.style.overflow = 'hidden';
+    player.setDirection(1);
+    player.play();
+    isOpen = true;
+  } else {
+    list.classList.remove('show-menu');
+    document.body.style.overflow = 'auto';
+    player.setDirection(-1);
+    player.play();
+    isOpen = false;
+  }
+}
+
+// Icon par click karne par menu khulega/band hoga
+icon.addEventListener('click', toggleMenu);
+
+// Har ek link par click karne par menu band ho jaye
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if(isOpen) {
+      toggleMenu(); // Agar menu khula hai toh band kar do
+    }
+  });
+});
 
 // ─── CURSOR ───
 const cursor = document.getElementById('cursor');

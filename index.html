@@ -9,6 +9,8 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- icon lottieflow -->
+ <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -42,13 +44,26 @@
     <path d="M15,32 Q60,42 105,32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
   </svg>
 </a>
+<div class="menu" id="main-nav">
     <ul class="h-nav-links">
       <li><a href="assets/page/work.html">Work </a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#" class="h-nav-btn">Get a Quote</a>
+ <a href="mailto:amanshakya2716@gmail.com" class="h-nav-btn">
+    <span>Hire Me</span>
+    <span>→</span>
+  </a>    </div>
+    <div class="menu-icon" style="cursor: pointer; width: 10px;">
+    <dotlottie-player 
+    src="./assets/icon/menu-2.json" 
+    background="transparent" 
+    speed="5" 
+    style="width: 50px; height: 50px;" 
+    hover >
+</dotlottie-player>
+</div>
   </nav>
 
   <!-- SCENE: rope + rail (decorative, non-interactive) -->
