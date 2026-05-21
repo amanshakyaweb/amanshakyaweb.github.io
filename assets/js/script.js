@@ -35,6 +35,36 @@ navLinks.forEach(link => {
   });
 });
 
+      // light/dark moood 
+
+let moodBtn = document.querySelector('#mood-btn');
+let body = document.body;
+
+const savedTheme = localStorage.getItem('theme');
+  if(savedTheme === 'dark'){
+    body.classList.add('dark-mode')
+    moodBtn.textContent ='Light →'
+  }else{
+    moodBtn.textContent ='Dark →'
+  }
+
+moodBtn.addEventListener('click', function () {
+  body.classList.toggle('dark-mode')
+  const isDark = body.classList.contains('dark-mode');
+
+  if(isDark){
+    moodBtn.textContent = "Light →";
+    localStorage.setItem('theme', 'dark')
+  }else{
+    moodBtn.textContent = 'Dark →';
+    localStorage.setItem('theme', 'light')
+  }
+});
+const prefersDark = window.matchMedia('(prefers.color.scheme: dark)');
+if(!savedTheme && prefersDark.matches){
+  body.classList.add('dark-mode');
+  moodBtn.textContent ='Light →'
+}
 // ─── CURSOR ───
 const cursor = document.getElementById('cursor');
 const follower = document.getElementById('cursor-follower');
